@@ -11,8 +11,8 @@ public final class Person {
 	private IntegerProperty zipCode = new SimpleIntegerProperty();
 	private StringProperty city = new SimpleStringProperty();
 	private StringProperty phoneNumber = new SimpleStringProperty();
-	private StringProperty emailAddess = new SimpleStringProperty();
-	private ObjectProperty<LocalDate> birthdate = new SimpleObjectProperty<LocalDate>();
+	private StringProperty emailAddress = new SimpleStringProperty();
+	private ObjectProperty<LocalDate> birthday = new SimpleObjectProperty<>();
 	
 	public String getFirstName() {
 		return firstName.get();
@@ -86,27 +86,27 @@ public final class Person {
 		this.phoneNumber.set(phoneNumber);
 	}
 	
-	public String getEmailAddess() {
-		return emailAddess.get();
+	public String getEmailAddress() {
+		return emailAddress.get();
 	}
 	
-	public StringProperty emailAddessProperty() {
-		return emailAddess;
+	public StringProperty emailAddressProperty() {
+		return emailAddress;
 	}
 	
-	public void setEmailAddess(String emailAddess) {
-		this.emailAddess.set(emailAddess);
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress.set(emailAddress);
 	}
 	
-	public LocalDate getBirthdate() {
-		return birthdate.get();
+	public LocalDate getBirthday() {
+		return birthday.get();
 	}
 	
-	public ObjectProperty<LocalDate> birthdateProperty() {
-		return birthdate;
+	public ObjectProperty<LocalDate> birthdayProperty() {
+		return birthday;
 	}
 	
-	public void setBirthdate(LocalDate birthdate) {
-		this.birthdate.set(birthdate);
+	public void setBirthday(LocalDate birthday) {
+		this.birthday.set(birthday);
 	}
 }
