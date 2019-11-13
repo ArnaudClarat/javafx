@@ -1,4 +1,4 @@
-package com.github.raylemon.javafx;
+package be.ifosupwavre.info.javafx;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
