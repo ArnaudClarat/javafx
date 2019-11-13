@@ -28,7 +28,7 @@ javafx {
 
 application {
     //Configuration de l’application. Utile pour la tâche "run"
-    mainClassName = "${moduleName}/com.github.raylemon.javafx.MainApp" //à remplacer!
+    mainClassName = "${moduleName}/com.ifosupwavre.info.javafx.MainApp" //à remplacer!
 
     //Créer un fichier "modules-info.java dans src/main/java pour activer la variable moduleName
 }

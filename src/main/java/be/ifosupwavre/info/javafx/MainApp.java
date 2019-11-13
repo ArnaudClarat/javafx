@@ -1,6 +1,9 @@
 package be.ifosupwavre.info.javafx;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class MainApp extends Application {
@@ -21,6 +24,15 @@ public class MainApp extends Application {
      */
     @Override
     public void start(Stage primaryStage) {
-        //TODO logique de démarrage de l’application
+	    try {
+		    FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("mainvue.fxml"));
+		    Parent root = loader.load();
+		    Scene scene = new Scene(root);
+		    primaryStage.setScene(scene);
+		    primaryStage.setTitle("JavaFX Address Manager");
+		    primaryStage.show();
+	    } catch (Exception e) {
+		    e.printStackTrace();
+	    }
     }
 }
