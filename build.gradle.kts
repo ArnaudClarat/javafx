@@ -4,7 +4,7 @@ plugins {
     id("org.openjfx.javafxplugin") version "0.0.8" //Utilisation d’un plugin qui va installer javaFX automatiquement
 }
 
-group = "com.github.raylemon"
+group = "com.ifosupwavre.info"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -28,7 +28,7 @@ javafx {
 
 application {
     //Configuration de l’application. Utile pour la tâche "run"
-    mainClassName = "${moduleName}/com.ifosupwavre.info.javafx.MainApp" //à remplacer!
+    mainClassName = "$moduleName/com.ifosupwavre.info.javafx.MainApp" //à remplacer!
 
     //Créer un fichier "modules-info.java dans src/main/java pour activer la variable moduleName
 }
