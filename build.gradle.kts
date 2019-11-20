@@ -14,6 +14,7 @@ repositories {
 dependencies {
     //testCompile("junit", "junit", "4.12")
     implementation("com.h2database:h2:1.4.196") //utilisation de la db
+    implementation("org.fluttercode.datafactory:datafactory:0.8")
 }
 
 configure<JavaPluginConvention> {
