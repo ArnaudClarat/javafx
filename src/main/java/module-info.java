@@ -5,6 +5,7 @@ module javafx {
 	//utilisation des modules de javafx
 	requires javafx.controls;
 	requires javafx.fxml;
+	requires datafactory;
 	opens be.ifosupwavre.info.javafx.controllers to javafx.fxml; //ouverture du package de notre application à fxml pour accéder aux fonctions de JavaFX.
 	exports be.ifosupwavre.info.javafx; //exportation du package.
 }
